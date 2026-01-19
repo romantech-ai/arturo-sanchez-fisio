@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -38,10 +39,14 @@ export default function Navbar() {
       <Container>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="flex items-baseline">
-              <span className="text-3xl font-bold text-secondary">A</span>
-              <span className="text-3xl font-bold text-primary">S</span>
+          <a href="#inicio" className="flex items-center gap-3">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Arturo Sánchez"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <p className="text-sm font-semibold text-secondary leading-tight">Clínica Arturo Sánchez</p>

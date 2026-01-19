@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://arturo-sanchez-fisio.vercel.app"),
   title: "Clínica Arturo Sánchez | Fisioterapia Avanzada en Campo de Criptana",
   description: "Fisioterapia avanzada en Campo de Criptana, Ciudad Real. Diagnóstico ecográfico, neuromodulación, terapia manual, punción seca y más. Pide tu cita: 641 024 494",
   keywords: [
@@ -29,13 +30,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://arturosanchezfisio.es",
+    url: "https://arturo-sanchez-fisio.vercel.app",
     siteName: "Clínica Arturo Sánchez",
     title: "Clínica Arturo Sánchez | Fisioterapia Avanzada",
     description: "Fisioterapia avanzada en Campo de Criptana. Diagnóstico ecográfico, neuromodulación y tratamientos personalizados.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/arturo-hero.png",
         width: 1200,
         height: 630,
         alt: "Clínica Arturo Sánchez - Fisioterapia Avanzada",
@@ -46,14 +47,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clínica Arturo Sánchez | Fisioterapia Avanzada",
     description: "Fisioterapia avanzada en Campo de Criptana. Diagnóstico ecográfico, neuromodulación y tratamientos personalizados.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/arturo-hero.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://arturosanchezfisio.es",
+    canonical: "https://arturo-sanchez-fisio.vercel.app",
   },
 };
 
@@ -75,13 +76,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
-              "@id": "https://arturosanchezfisio.es",
+              "@id": "https://arturo-sanchez-fisio.vercel.app",
               name: "Clínica Arturo Sánchez",
               alternateName: "Arturo Sánchez Fisioterapia",
               description: "Fisioterapia avanzada en Campo de Criptana. Diagnóstico ecográfico, neuromodulación, terapia manual, punción seca y tratamientos personalizados.",
-              url: "https://arturosanchezfisio.es",
+              url: "https://arturo-sanchez-fisio.vercel.app",
               telephone: "+34641024494",
-              image: "https://arturosanchezfisio.es/images/og-image.jpg",
+              image: "https://arturo-sanchez-fisio.vercel.app/images/arturo-hero.png",
               priceRange: "€€",
               address: {
                 "@type": "PostalAddress",
